@@ -8,14 +8,14 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
 }
 
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
-    --white-color: #fdfdfd;
+    --main-color: #ffff00;
+    --text-color2: black;
+    --white-color: #000000;
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
@@ -25,9 +25,10 @@
 }
 
 .dark-mode {
-    --bg-color: #0b061f;
+    --bg-color: #000000;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
+    --text-color2: yellow;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,13 +39,23 @@
   }
 
 html {
-    font-size: 62.5%;
+    font-size: 71.5%;
     overflow-x: hidden;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    font-family: "Urbanist", "Raleway", sans-serif;
+    transition: background 1s ease, color 0.9s ease; 
+}
+
+h1, h2, h3 {
+  font-family: 'Urbanist', sans-serif; 
+}
+
+p, span, div,textarea,input {
+  font-family: 'Urbanist', sans-serif; 
 }
 
 .header {
@@ -67,10 +78,18 @@ body {
 
 .logo {
     font-size: 2.5rem;
-    color: var(--main-color);
+    color: var(--text-color2);
     font-weight: 600;
     margin-right: auto;
 }
+
+    .effect{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    }
+    .effect:hover{
+      cursor: pointer;
+      transform: scale(1.05);
+    }
 
 .navbar a {
     position: relative;
@@ -85,22 +104,22 @@ body {
 }
 
 .header.sticky .navbar a.active {
-    color: var(--main-color);
+    color: var(--text-color2);
 }
 
 .navbar a.active::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -29px;
     width: 100%;
-    height: .2rem;
+    height: .4rem;
     background: var(--white-color);
 }
 
 .header.sticky .navbar a::before {
-    background: var(--main-color);
-    opacity: .7;
+    background: var(--text-color2);
+    opacity: 1;
 }
 
 #darkMode-icon {
@@ -141,13 +160,14 @@ section {
 }
 
 .home-content h1 {
-    font-size: 5.6rem;
+    font-size: 4.6rem;
     font-weight: 700;
-    margin-bottom: .3rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 
 .home-content .social-media a {
@@ -157,11 +177,11 @@ section {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid var(--text-color2);
     border-radius: 50%;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--text-color2);
     margin: 2.5rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
@@ -191,6 +211,50 @@ section {
     border-color: var(--main-color);
 }
 
+.dark-mode{
+.blue-effect-dark {
+    position: sticky;
+    translate: -230%;
+    width: 300px; /* Increase width for a smoother fade */
+    height: 60vh; /* Increase height for a smoother fade */
+    z-index: -1;
+    background: 
+    radial-gradient(
+      circle at left, /* Primary gradient positioned at top right */
+      rgba(4, 0, 255, 0.836) 0%, /* Bright yellow center */
+      rgba(2, 25, 90, 0.3) 50%, /* Softer yellow */
+      rgba(4, 0, 255, 0) 100% /* Fully transparent */
+    ),
+    radial-gradient(
+      circle at left, /* Secondary gradient for more fluid glow */
+      rgba(4, 0, 255, 0.2) 0%, /* Lighter yellow for softer effect */
+      rgba(0, 4, 255, 0) 50% /* Fade to transparency for smooth edge */
+    );
+    filter: blur(40px);
+    pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  }
+  }
+.red-effect{
+    position: sticky;
+    transform: translate(70vw);
+    width: 300px; /* Increase width for a smoother fade */
+    height: 70vh; /* Increase height for a smoother fade */
+    z-index: 1;
+    background: 
+    radial-gradient(
+      circle at bottom, /* Primary gradient positioned at top right */
+      rgba(0, 0, 0, 0.836) 0%, /* Bright yellow center */
+      rgba(0, 0, 0, 0.3) 50%, /* Softer yellow */
+      rgba(0, 0, 0, 0) 100% /* Fully transparent */
+    ),
+    radial-gradient(
+      circle at bottom, /* Secondary gradient for more fluid glow */
+      rgba(0, 0, 0, 0.2) 0%, /* Lighter yellow for softer effect */
+      rgba(0, 0, 0, 0) 50% /* Fade to transparency for smooth edge */
+    );
+    filter: blur(40px);
+    pointer-events: none; 
+}
 .home .profession-container {
     position: absolute;
     top: 50%;
@@ -247,11 +311,16 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: var(--main-color);
+    color: var(--text-color2);
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
     background: var(--bg-color);
+    transition: background 1s ease, color 0.9s ease; 
     padding: 13px 0;
+}
+
+.profession{
+    background: transparent;
 }
 
 .home .profession-box .profession:nth-child(1) i {
@@ -276,7 +345,7 @@ section {
 .home .profession-box .circle {
     width: 560px;
     height: 560px;
-    border: 3px solid var(--main-color);
+    border: 3px solid var(--text-color2);
     border-radius: 50%;
     z-index: -1;
 }
@@ -289,7 +358,8 @@ section {
     height: 0;
     border-top: 50vh solid var(--main-color);
     border-right: 384px solid var(--main-color);
-    border-bottom: 50vh solid var(--main-color);
+    /* border-bottom: 50vh solid var(--main-color); */
+    border-bottom: 50vh solid rgb(255, 0, 0);
     border-left: 384px solid transparent;
 }
 
@@ -298,12 +368,17 @@ section {
     bottom: 0;
     right: 40px;
     pointer-events: none;
-    max-width: 480px;
+    max-width: 35vw;
     max-height: 100vh;
+}
+@media (min-width: 1500px) {
+    .home-img img {
+        max-width: 30vw;
+    }
 }
 
 span {
-    color: var(--main-color);
+    color: var(--text-color2);
 }
 
 .about {
@@ -332,7 +407,7 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     margin: 2rem 0 3rem;
 }
 
@@ -607,7 +682,7 @@ span {
     }
 
     .home-img img {
-        display: none;
+        display: 25vw;
     }
 
     .footer {
@@ -632,6 +707,9 @@ span {
 @media (max-width: 879px) {
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .home-img img {
+        display: none;
     }
 }
 
@@ -853,4 +931,8 @@ span {
 }
 img {
     border-radius: 20px;
+}
+.icnclr{
+    background-color: white;
+    border-radius: 10px;
 }
