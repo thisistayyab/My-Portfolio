@@ -1,264 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tayyab's Portfolio</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <!-- header design -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> Tayyab's Portfolio </title>
+  </head>
+  <body>
     <header class="header">
-        <a href="#" class="logo">My Portfolio</a>
+      <div class="header__socials">
+        <a class="anim" href="mailto:thisistayyab@outlook.com?subject=Let's%20Connect&body=Hi%20Tayyab,%0D%0A%0D%0A"><i class="ri-mail-fill"></i></a>
+        <a class="anim" href="https://github.com/thisistayyab"><i class="ri-github-fill"></i></a>
+        <a class="anim" href="https://www.linkedin.com/in/thisistayyab/"><i class="ri-linkedin-fill"></i></a>
+      </div>
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#">Tayyab's Portfolio<span></span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <span><i class="ri-menu-3-line"></i></span>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#project">Projects</a></li>
+            <li class="link"><a href="#service">Services</a></li>
+            <li class="link"><a href="#client">Clients</a></li>
+            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link btn anim"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/header.webp" alt="header" />
+        </div>
+        <div class="header__content">
+          <h4>Crafting Digital Excellence</h4>
+          <h1>Hi, I’m Tayyab. Web Developer & DSA Enthusiast.</h1>
+          <p>
+            I’m a passionate web developer and computer engineering student with 3+ years of hands-on experience in building full-stack applications. I specialize in creating clean, responsive UIs with React and robust backends using modern technologies.
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="bx bx-moon effect" id="darkMode-icon"></div>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
+Beyond development, I've solved over 850+ LeetCode problems, strengthening my core in Data Structures and Algorithms — giving me an edge in building optimized, scalable solutions.
+          </p>
+          <button class="btn"><a href="#contact">Hire Me Now</a></button>
+        </div>
+      </div>
     </header>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I am</h3>
-            <h1>Tayyab Aslam</h1>
-            <p>
-                I'm a MERN Stack developer who loves to create beautiful and functional websites
-                for people who want to make a difference in the world.
-            </p>
-            <p>Currently I'm a student of Riphah International University, where I'm completing my Bachelor's Degree in computer science and learning how to
-            create beautiful and functional websites using HTML, CSS, JavaScript, and React.</p>
-
-            <div class="social-media">
-                <a class="effect" target="_blank" href="https://x.com/tayyab_hun"><i class='bx bxl-twitter'></i></a>
-                <a class="effect" target="_blank" href="https://www.instagram.com/thisis_tayyab/"><i class='bx bxl-instagram-alt'></i></a>
-                <a class="effect" target="_blank" href="https://www.linkedin.com/in/thisistayyab/"><i class='bx bxl-linkedin'></i></a>
-            </div>
-
-            <a href="#" class="btn">Download CV</a>
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.webp" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Hi There, I’m Tayyab</h2>
+        <p>
+          A dedicated full-stack web developer and computer engineering student with a strong passion for crafting seamless user experiences. My development journey began with a love for both logic and design — and has grown into a mission to build clean, responsive, and impactful digital products.
+        </p>
+        <h4>
+          With over 850+ LeetCode problems solved, I bring deep algorithmic thinking to every project. This blend of creativity and problem-solving allows me to develop web solutions that are not only visually appealing but also highly efficient.
+        </h4>
+        <div class="about__btns">
+          <a href="#" download class="download__btn">
+            Download CV
+          </a>
+          <a class="anim" href="mailto:thisistayyab@outlook.com?subject=Let's%20Connect&body=Hi%20Tayyab,%0D%0A%0D%0A"><i class="ri-mail-fill"></i></a>
+          <a class="anim" href="https://github.com/thisistayyab"><i class="ri-github-fill"></i></a>
+          <a class="anim" href="https://www.linkedin.com/in/thisistayyab/"><i class="ri-linkedin-fill"></i></a>
         </div>
-        
-        <div class="profession-container">
-            <div class="profession-box">
-                <div class="profession" style="--i:0;">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Web Developer</h3>
-                </div>
-                <div class="profession" style="--i:1;">
-                    <i class='bx bx-camera'></i>
-                    <h3>Front-end developer</h3>
-                </div>
-                <div class="profession" style="--i:2;">
-                    <i class='bx bx-palette'></i>
-                    <h3>Web Designer</h3>
-                </div>
-                <div class="profession" style="--i:3;">
-                    <i class='bx bx-video-recording'></i>
-                    <h3>MERN Stack developer</h3>
-                </div>
-
-                <div class="circle"></div>
-            </div>
-
-            <div class="overlay">
-            </div>
-        </div>
-
-        <div class="home-img">
-            <img src="images/home.webp" alt="">
-        </div>
-        <div class="blue-effect-dark"></div>
+      </div>
     </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.webp" alt="">
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <span><i class="ri-pen-nib-line"></i></span>
+        <div>
+          <h4>Design</h4>
+          <p>
+            Our designers and content creators are committed to delivering
+            engaging digital content.
+          </p>
         </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>
-                Hi there, welcome to my website! I'm Tayyab,
-                a passionate web developer who enjoys learning new technologies
-                and solving problems with code!
-            </h3>
-            <p>
-                This website is my portfolio website where I share web development
-                projects that interest me and inspire me.
-            </p>
-            <p>
-                Thank you for visiting my website and getting to know me better. I hope you
-                enjoyed reading my work and
-                found
-                them useful and informative. If you want to read more about my projects visit my github profile and read more about me.
-            </p>
-            <a target="_blank" href="https://github.com/thisistayyab" class="btn">Read More</a>
+      </div>
+      <div class="banner__card">
+        <span><i class="ri-layout-masonry-line"></i></span>
+        <div>
+          <h4>Development</h4>
+          <p>
+            I stay at forefront of technological advancements, ensuring your
+            digital presence performant.
+          </p>
         </div>
+      </div>
+      <div class="banner__card">
+        <span><i class="ri-checkbox-line"></i></span>
+        <div>
+          <h4>Testing & QA</h4>
+          <p>
+            I understand that your digital presence should not just look good,
+            it should deliver traffic & engagement.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>I’m here to create a website that not only looks great but also works perfectly for you and your visitors, making your online presence truly stand out.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Front-end development</h3>
-                <p>I’ll bring your vision to life with a front-end that’s both stunning and user-friendly, ensuring a seamless experience for your visitors.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>MERN Stack Developer</h3>
-                <p>I specialize in MERN stack development to build powerful, dynamic web applications that are both scalable and efficient, tailored to your unique needs.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+    <section class="section__container project__container" id="project">
+      <div class="project__header">
+        <h2 class="section__header">My Projects</h2>
+        <div class="project__nav">
+          <button
+            class="btn project__btn mixitup-control-active"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button class="btn project__btn" data-filter=".web">Web Apps</button>
+          <button class="btn project__btn" data-filter=".game">Desktop Apps</button>
+          <button class="btn project__btn" data-filter=".design">
+            Practice DSA
+          </button>
         </div>
+      </div>
+      <div class="project__grid">
+        <div class="project__card mix web anim">
+          <a href="https://thisistayyab.github.io/NoteHub/"><img src="assets/project-1.png" alt="project" /></a>
+        </div>
+        <div class="project__card mix game anim">
+          <img src="assets/project-2.jpg" alt="project" />
+        </div>
+        <div class="project__card mix design anim">
+          <a href="https://leetcode.com/u/thisistayyab/"><img src="assets/project-3.webp" alt="project" /></a>
+        </div>
+        <div class="project__card mix web anim">
+          <img src="assets/project-4.jpg" alt="project" />
+        </div>
+        <div class="project__card mix game anim">
+          <img src="assets/project-5.jpg" alt="project" />
+        </div>
+        <div class="project__card mix design anim">
+          <img src="assets/project-6.jpg" alt="project" />
+        </div>
+      </div>
     </section>
 
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Comming soon</p>
-                    <a class="icnclr" href="#"><i class='icnclr bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Comming soon</p>
-                    <a class="icnclr" href="#"><i class='icnclr bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Comming soon</p>
-                    <a class="icnclr" href="#"><i class='icnclr bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio4.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Comming soon</p>
-                    <a href="#"><i class='icnclr bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Comming soon</p>
-                    <a href="#"><i class='icnclr bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="">
-
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Comming soon</p>
-                    <a href="#"><i class='icnclr bx bx-link-external'></i></a>
-                </div>
-            </div>
+    <section class="section__container service__container" id="service">
+      <p class="section__subheader">My Services</p>
+      <h2 class="section__header">What I Do?</h2>
+      <p class="section__description">
+        I specialize in a wide range of web development services designed to
+        transform your vision into reality.
+      </p>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Website Design</h4>
+          <p>
+            I craft user-friendly interfaces that engage visitors and help you
+            achieve your online goals with minimum efforts.
+          </p>
         </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>E-commerce Solutions</h4>
+          <p>
+            I build secure, scalable, and user-centric online stores that
+            enhance the shopping experience and drive conversions.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-stack-line"></i></span>
+          <h4>DSA Mastery</h4>
+          <p>
+            From arrays to advanced algorithms, we build efficient and optimized solutions that form the backbone of high-performance applications.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Content Marketing</h4>
+          <p>
+            My services include creating blog posts, videos, and social media
+            content that drives traffic and engagement.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-seo-line"></i></span>
+          <h4>SEO</h4>
+          <p>
+            My SEO strategies are tailored to your specific goals, helping you
+            reach your target audience and grow your online presence.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Digital Marketing</h4>
+          <p>
+            From pay-per-click (PPC) advertising to social media marketing, I
+            ensure your brand stands out in the crowded digital landscape.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-    
-        <div class="form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwc2t67eoJgB_C4Xrkz6ma1oot2_gz0uhZDjrE28xWeeuJTA/viewform?embedded=true" width="100%" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <section class="section__container client__container" id="client">
+      <p class="section__subheader">Testimonials</p>
+      <h2 class="section__header">What Our Clients Say About Us</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-1.webp" alt="client" />
+              <div>
+                <p>
+                  He brought our vision to life with a stunning, modern website that not only looks great but also performs flawlessly across all devices. His attention to design detail, user experience, and responsiveness exceeded our expectations. We've received countless compliments, and our online engagement has significantly improved. Truly the best in web design!
+                </p>
+                <h4>Kashif Shakeel <span>CEO, Corporation</span></h4>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-2.webp" alt="client" />
+              <div>
+                <p>
+                  His expertise in managing our Shopify store has been a game-changer. From product listings to seamless integrations and performance optimization, everything is handled with precision. Our sales have increased, the customer experience has improved, and we finally have peace of mind knowing our store is in expert hands.
+                </p>
+                <h4>Hafiz Abeer Ahmad <span>Marketing Director</span></h4>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>    
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-    <!-- footer design -->
+    <!-- <section class="section__container blog__container" id="blog">
+      <p class="section__subheader">Blog Posts</p>
+      <h2 class="section__header">I Love To Write Articles</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img src="assets/blog-1.jpg" alt="blog" />
+          <p>Case Study</p>
+          <h4>Turning Clicks into Conversions with PPC</h4>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-2.jpg" alt="blog" />
+          <p>Educational/How-To</p>
+          <h4>The Ultimate Guide to Website Accessibility</h4>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-3.jpg" alt="blog" />
+          <p>Trend Analysis</p>
+          <h4>2023 Web Design Trends: What's In and What's Out</h4>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section__container contact__container" id="contact">
+      <p class="section__subheader">Contact Us</p>
+      <h2 class="section__header">Get In Touch</h2>
+      <form action="/" class="contact__form">
+        <div class="input__row">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Description" />
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h5><a href="#">Tayyab</a></h5>
+          <p>
+            I'm a dedicated web developer with a creative flair and a penchant
+            for turning lines of code into captivating online experiences.
+          </p>
+          <div class="footer__socials">
+            <a href="mailto:thisistayyab@outlook.com?subject=Let's%20Connect&body=Hi%20Tayyab,%0D%0A%0D%0A"><i class="ri-mail-fill"></i></a>
+            <a href="https://github.com/thisistayyab"><i class="ri-github-fill"></i></a>
+            <a href="https://linkedin.com/in/thisistayyab"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://x.com/tayyab_coder"><i class="ri-twitter-fill"></i></a>
+            <a href="https://dribbble.com/thisistayyab"><i class="ri-dribbble-line"></i></a>
+          </div>
         </div>
-
-        <div class="footer-iconTop">
-            <a class="effect icnclr" href="#home"><i class='icnclr bx bx-up-arrow-alt'></i></a>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <a href="#">Web Design</a>
+            <a href="#">App Design</a>
+            <a href="https://leetcode.com/u/thisistayyab/">Data Structures and Algorithms</a>
+            <a href="#">Web Development</a>
+          </div>
         </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <div class="footer__links">
+            <a href="mailto:thisistayyab@outlook.com?subject=Let's%20Connect&body=Hi%20Tayyab,%0D%0A%0D%0A">Contact</a>
+            <a href="#">My Blog</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Tayyab's Portfolio . All rights reserved.
+      </div>
     </footer>
 
-    <script>
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          // System is in dark mode
-          document.body.classList.add('dark-mode');
-        } else {
-          // System is in light mode
-          document.body.classList.remove('dark-mode');
-        }
-    
-        // Listen for changes in the color scheme preference
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-          if (e.matches) {
-            // Dark mode is enabled
-            document.body.classList.add('dark-mode');
-          } else {
-            // Light mode is enabled
-            document.body.classList.remove('dark-mode');
-          }
-        });
-      </script>
-    <!-- scroll reveal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
