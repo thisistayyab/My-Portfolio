@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-    if (window.location.hostname === "thisistayyab.github.io") {
-      window.location.href = "https://thisistayyab.vercel.app/";
-    }
-  </script>
+      const currentHost = window.location.hostname;
+      const currentPath = window.location.pathname;
+
+      if (currentHost === "thisistayyab.github.io" && currentPath.startsWith("/My-Portfolio")) {
+        window.location.replace("https://thisistayyab.vercel.app/");
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
